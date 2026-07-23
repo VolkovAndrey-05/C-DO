@@ -23,7 +23,7 @@ int main(){
 	memcpy(&rez, &sym, sizeof(float));
 	printf("Result 4: %x\n", (int)rez);
 	//1.0
-	sym = (struct FloatBit){0, 132, 0};
+	sym = (struct FloatBit){0, 127, 0};
 	memcpy(&rez, &sym, sizeof(float));
 	printf("Result 1: %x\n", (int)rez);
 
