@@ -1,15 +1,14 @@
 #include <stdio.h>
 #include "hash_32tabl.h"
-
+#include "hash_49tabl.h"
 int main(){
-	struct HashTable *table;
-	init_table(table);
-	add_value(table, 1, 2);
-	add_value(table, 65, 30);
-	search_value(table, 65);
-	add_value(table, 1, 2);
-	search_value(table, 65);
-	search_value(table, 1);
-	remove_value(table, 1);
+
+        struct HashTable2 table2;
+        init_table2(&table2);
+        add_value2(&table2, 65, 30);
+        search_value2(&table2, 65);
+        add_value2(&table2, 1, 2);
+        search_value2(&table2, 1);
+        remove_value2(&table2, 1);
 	return 0;
 }
